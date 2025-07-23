@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function AddTodo({ onAddTodo = () => {} }) {
   const [title, setTitle] = useState("");
@@ -12,8 +12,8 @@ export default function AddTodo({ onAddTodo = () => {} }) {
       />
       <button
         onClick={() => {
-            onAddTodo(title);
-            setTitle("");
+          onAddTodo(title);
+          setTitle("");
         }}
         className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition"
       >
